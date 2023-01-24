@@ -151,8 +151,9 @@ main div.bg-main:nth-child(even) {
     background-image: url(../img/wave.svg);
 }
 
-.container.fat {
+main div.container.fat {
     text-align: center;
+    margin-bottom: 0;
 }
 
 .container.fat h3 {
@@ -165,6 +166,10 @@ main div.bg-main:nth-child(even) {
 }
 
 /* footer */
+
+footer div.flex.section-footer.container {
+    margin-top: 0;
+}
 
 footer {
     background-color: #23272A;
