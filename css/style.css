@@ -8,7 +8,7 @@
 
 /* debug */
 
-.debug nav.flex {
+/* .debug nav.flex {
     background-color: orange;
 }
 
@@ -49,9 +49,6 @@
     height: 600px;
 }
 
-.debug main div.bg-main:nth-child(even) {
-    background-color: gray;
-}
 
 .debug footer {
     background-color: black;
@@ -72,12 +69,50 @@
 
 .debug .col-big {
     background-color: coral;
+} */
+
+/* common */
+
+.flex {
+    display: flex;
 }
 
-/* body */
+h1, h2 {
+    margin-bottom: 30px;
+}
 
+p {
+    margin-bottom: 20px;
+}
+.button {
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.button.white-bg {
+    background-color: white;
+    color: black;
+}
+
+.logo {
+    width: 80px; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.white-font a, .button.white-font {
+    color: white;
+}
 
 /* header */
+
+header {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+}
 
 .nav-container {
     padding: 10px 0;
@@ -90,20 +125,15 @@ nav {
 }
 
 
-
 nav div:last-child {
     text-align: right;
-}
-
-
-.flex {
-    display: flex;
 }
 
 ul.flex {
     list-style-type: none;
     width: 60%;
     justify-content: center;
+    gap: 20px;
 }
 
 header .flex >div {
@@ -115,14 +145,21 @@ ul.flex li, header .flex > div, footer .flex > div  {
 }
 
 .container-banner {
-    padding: 40px 0;
+    padding: 100px 0;
+    width: 700px;
+    margin: 50px auto;
+    text-align: center;
 }
 
-header div.container-banner > div.dashed {
-    width: 50%;
-    margin: 0 auto;
+.container-banner .button.white-bg::before {
+    content: "\1F87B";
+    color: black;
+    font-weight: 700;
 }
 
+header{
+    color: white;
+}
 
 
 /* main */
@@ -142,6 +179,10 @@ header div.container-banner > div.dashed {
 
 .small-box {
     width: 30%;
+}
+
+main div.bg-main:nth-child(even) {
+    background-color: gray;
 }
 
 /* footer */
