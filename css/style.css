@@ -73,6 +73,20 @@
 
 /* common */
 
+h1, h2 {
+    font-size: 40px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.container {
+    padding: 100px 0;
+    width: 1000px;
+    margin: 50px auto;
+}
+
 .flex {
     display: flex;
 }
@@ -121,7 +135,6 @@ header {
 nav {
     justify-content: space-between;
     margin: 0 auto;
-    width: 65%;
 }
 
 
@@ -164,25 +177,21 @@ header{
 
 /* main */
 
-.container-section-main, .huge-box {
-    margin: 0 auto;
-    width: 65%;
-}
-
-.container-section-main, .bg-main.flex {
-    padding: 20px 0;
-}
-
 .big-box {
     width: 70%;
 }
 
 .small-box {
     width: 30%;
+    padding: 35px 0;
 }
 
 main div.bg-main:nth-child(even) {
-    background-color: gray;
+    background-color: #F6F6F6;
+}
+
+.container.fat {
+    text-align: center;
 }
 
 /* footer */
