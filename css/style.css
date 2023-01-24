@@ -6,72 +6,11 @@
     box-sizing: border-box;
 }
 
-/* debug */
-
-/* .debug nav.flex {
-    background-color: orange;
-}
-
-.debug .nav-container {
-    background-color: aquamarine;
-}
-
-.debug .dashed {
-    border: 2px dashed black;
-}
-
-.debug .container-banner {
-    background-color: blue;
-}
-
-.debug .container-banner div {
-    background-color: #d43be2;
-
-}
-
-.debug .big-box {
-    background-color: #1276d4;
-}
-
-.debug .small-box {
-    background-color: pink;
-}
-
-.debug .huge-box {
-    background-color: green;
-}
-
-.debug main div.container-section-main, .section-footer, .container-banner {
-    height: 400px;
-}
-
-.debug .huge-box{
-    height: 600px;
-}
-
-
-.debug footer {
-    background-color: black;
-}
-
-.debug .pie-pagina {
-    background-color: aqua;
-}
-
-.debug .pie-pagina > .dashed {
-    background-color: pink;
-}
-
-.debug .col-small {
-    border: 2px dashed white;
-    background-color: aqua;
-}
-
-.debug .col-big {
-    background-color: coral;
-} */
-
 /* common */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
 h1, h2 {
     font-size: 40px;
@@ -97,11 +36,25 @@ h1, h2 {
 
 p {
     margin-bottom: 20px;
+    line-height: 2em;
 }
+
 .button {
     padding: 10px 20px;
-    background-color: black;
     border-radius: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a.button.black {
+    background-color: black;
+}
+
+a.button.viola {
+    background-color: #7983F5;
+    color: white;
 }
 
 .button.white-bg {
@@ -117,8 +70,14 @@ a {
     text-decoration: none;
 }
 
-.white-font a, .button.white-font {
+.white-font a, .button.white-font, header, footer {
     color: white;
+}
+
+.container-banner .button.white-bg::before,
+.container.fat .button::before {
+    content: "\1F87B";
+    font-weight: 700;
 }
 
 /* header */
@@ -137,13 +96,11 @@ nav {
     margin: 0 auto;
 }
 
-
 nav div:last-child {
     text-align: right;
 }
 
-ul.flex {
-    list-style-type: none;
+header ul {
     width: 60%;
     justify-content: center;
     gap: 20px;
@@ -153,7 +110,8 @@ header .flex >div {
     width: 20%;
 }
 
-ul.flex li, header .flex > div, footer .flex > div  {
+ul.flex li, header .flex > div,
+footer .flex > div  {
     padding: 5px;
 }
 
@@ -164,16 +122,13 @@ ul.flex li, header .flex > div, footer .flex > div  {
     text-align: center;
 }
 
-.container-banner .button.white-bg::before {
-    content: "\1F87B";
-    color: black;
-    font-weight: 700;
-}
-
 header{
     color: white;
 }
 
+header .container {
+    margin-top: 0;
+}
 
 /* main */
 
@@ -194,11 +149,19 @@ main div.bg-main:nth-child(even) {
     text-align: center;
 }
 
+.container.fat h3 {
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.container.fat .button {
+    color: white;
+}
+
 /* footer */
 
-.pie-pagina, .section-footer {
-    width: 65%;
-    margin: 0 auto;
+footer {
+    background-color: #23272A;
 }
 
 .pie-pagina {
@@ -217,6 +180,55 @@ main div.bg-main:nth-child(even) {
 
 .col-big {
     flex-grow: 1.5;
+}
+
+hr {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+footer li {
+    padding-bottom: 10px;
+}
+
+.container.bot {
+    margin-bottom: 0;
+}
+
+footer li {
+    padding-bottom: 15px;
+}
+
+.violet-font {
+    color: #7983F5;
+}
+
+footer div ul li .violet-font {
+    color: #7983F5;
+}
+
+li i {
+    padding-right: 20px;
+}
+
+.prima-ul-footer li {
+    padding-bottom: 20px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+.prima-ul-footer li:nth-child(2)::after {
+    content: '\2304';
+    color: white;
+    vertical-align: 30%;
+    padding-left: 5px;
+}
+
+footer li img {
+    height: 16px;
+    vertical-align: middle;
 }
 
 /* Congratulazioni! Nessun errore trovato. */
