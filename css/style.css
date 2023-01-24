@@ -1,0 +1,172 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* debug */
+
+.debug nav.flex {
+    background-color: orange;
+}
+
+.debug .nav-container {
+    background-color: aquamarine;
+}
+
+.debug .dashed {
+    border: 2px dashed black;
+}
+
+.debug .container-banner {
+    background-color: blue;
+}
+
+.debug .container-banner div {
+    background-color: #d43be2;
+
+}
+
+.debug .big-box {
+    background-color: #1276d4;
+}
+
+.debug .small-box {
+    background-color: pink;
+}
+
+.debug .huge-box {
+    background-color: green;
+}
+
+.debug main div.container-section-main, .section-footer, .container-banner {
+    height: 400px;
+}
+
+.debug .huge-box{
+    height: 600px;
+}
+
+.debug main div.bg-main:nth-child(even) {
+    background-color: gray;
+}
+
+.debug footer {
+    background-color: black;
+}
+
+.debug .pie-pagina {
+    background-color: aqua;
+}
+
+.debug .pie-pagina > .dashed {
+    background-color: pink;
+}
+
+.debug .col-small {
+    border: 2px dashed white;
+    background-color: aqua;
+}
+
+.debug .col-big {
+    background-color: coral;
+}
+
+/* body */
+
+
+/* header */
+
+.nav-container {
+    padding: 10px 0;
+}
+
+nav {
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 65%;
+}
+
+
+
+nav div:last-child {
+    text-align: right;
+}
+
+
+.flex {
+    display: flex;
+}
+
+ul.flex {
+    list-style-type: none;
+    width: 60%;
+    justify-content: center;
+}
+
+header .flex >div {
+    width: 20%;
+}
+
+ul.flex li, header .flex > div, footer .flex > div  {
+    padding: 5px;
+}
+
+.container-banner {
+    padding: 40px 0;
+}
+
+header div.container-banner > div.dashed {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+/* main */
+
+.container-section-main, .huge-box {
+    margin: 0 auto;
+    width: 65%;
+}
+
+.container-section-main, .bg-main.flex {
+    padding: 20px 0;
+}
+
+.big-box {
+    width: 70%;
+}
+
+.small-box {
+    width: 30%;
+}
+
+/* footer */
+
+.pie-pagina, .section-footer {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.pie-pagina {
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.section-footer {
+    padding: 10px 0 40px 0;
+}
+
+.col-small {
+    flex-grow: 1;
+}
+
+.col-big {
+    flex-grow: 1.5;
+}
+
+/* Congratulazioni! Nessun errore trovato. */
